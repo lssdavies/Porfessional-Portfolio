@@ -14,7 +14,7 @@ The code meets accessibility standards and the site is optimized for search engi
 
 ## Updated Web Application
 
-Web App link: 
+Web App link: https://lssdavies.github.io/Professional-Portfolio/
 
 Screen shot of Web App:
 ![Web App]()
