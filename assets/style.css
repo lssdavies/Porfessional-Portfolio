@@ -1,0 +1,101 @@
+:root   {
+    --primaryColor: #1D99D9;
+    --secondaryColor: #14546C;
+    --tertiaryColor: #CBCDCE;
+    --additionalColor: #06141B;
+}
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body    {
+    color: var(--secondaryColor);
+    font-family:Helvetica, Arial, sans-serif;
+    }
+/*Header Styling*/
+header  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--secondaryColor);
+    background-size: cover;
+    padding: 5px 10px;
+    /*position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999; */
+}
+
+header h1   {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--primaryColor);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+header a    {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+/*Nav Bar Styling*/
+header nav  {
+    margin: 10px 0;
+    width: 40%;
+}
+header nav ul   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+header nav ul li a  {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+ header nav ul li a:hover   {
+    background-color: var(--primaryColor);
+    color: var(--tertiaryColor);
+    border-radius: 15px;
+    text-shadow: none;
+ }
+ /*Hero / Jumbotron Styling*/
+ section    {
+     padding: 60px;
+ }
+ .hero  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: right;
+    background-image: url("../assets/images/heroBg.png");
+    background-position: cover;
+    height: 350px;
+    border-bottom: 2px solid var(--tertiaryColor);
+ }
+
+ .heroQuote {
+    width: 35%;
+    text-align: right;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 16px;
+    font-family: Georgia;
+    color: var(--primaryColor);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 05);
+ }
+ .heroQuote h2 span  {
+    width: 35%;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+    font-family: Georgia;
+    color: var(--secondaryColor);
+ }
+ /*End of Hero Styling*/
