@@ -27,7 +27,6 @@ header  {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--secondaryColor);
-    background-size: cover;
     padding: 10px 10px;
     /*position: -webkit-sticky;
     position: sticky;
@@ -60,7 +59,7 @@ header nav ul   {
 header nav ul li a  {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 2.0vw;
+    font-size: 1.75vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
  }
  header nav ul li a:hover   {
@@ -80,7 +79,7 @@ header nav ul li a  {
     background-position: cover;
     background-repeat: no-repeat;
     height: 350px;
-    border-bottom: 2px solid var(--tertiaryColor);
+    border: 2px solid var(--tertiaryColor);
  }
 
  .heroQuote {
@@ -104,7 +103,7 @@ header nav ul li a  {
  }
  /*End of Hero Styling*/
 /*Styling of the Main Content /About me Section */
- .mainContainer {
+ .mainContainer, .mainContainer2 {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -144,6 +143,9 @@ header nav ul li a  {
     font-size: 30px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+.workHeading {
+    text-align: top;
+}
 /*End of About Me Styling*/
 /*My Work Styling*/
 
@@ -153,18 +155,11 @@ header nav ul li a  {
     object-fit: cover;
     border: 2px solid var(--tertiaryColor);
     padding: 1px;
-    box-shadow: 2px 2px var(--tertiaryColor);
+    box-shadow: 4px 5px var(--tertiaryColor);
 }
 .mainImage img:hover  {
     background-color: var(--primaryColor);
     opacity: 0.75;
-
-}
-.grid, .contactInfo   {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
 }
 .secondaryImage img  {
     height: 200px;
@@ -173,7 +168,7 @@ header nav ul li a  {
     border: 2px solid var(--tertiaryColor);
     padding: 1px;
     margin: 0 5px;
-    box-shadow: 2px 2px var(--tertiaryColor);
+    box-shadow: 4px 5px var(--tertiaryColor);
 }
 .secondaryImage img:hover  {
     background-color: var(--primaryColor);
@@ -210,5 +205,86 @@ header nav ul li a  {
     font-style: italic;
     
 }
+/* Additional Containers*/
+.grid   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactInfo   {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /*Contact info styling*/
-
+.contactInfo h5 {
+    width: 100%;
+    font-size: 18px;
+    color: var(--primaryColor);
+}
+/*Footer styling*/
+footer  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: var(--secondaryColor);
+    padding: 10px 10px;
+    border: 2px solid var(--tertiaryColor);
+}
+footer h6   {
+    font-weight: bold;
+    font-size: 2.0vw;
+    color: var(--primaryColor);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+} 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1079px) {
+    .hero  {
+        justify-content: center;
+        background-image: url("../assets/images/headerBg2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 290px;
+        border: 2px solid var(--tertiaryColor);
+     }
+     .heroQuote {
+         display: none;
+     }
+    }
+    @media screen and (max-width: 980px) {
+        header  {
+            display: flex;
+            flex-direction: column;
+        }
+        header h1 {
+            width: 100%;
+            text-align: center;
+        }
+        header nav ul   {
+             width: 60;
+            justify-content: center;
+        }
+        header nav ul li a {
+            font-size: 20px;
+        }
+        .mainContainer  {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .mainContainer2  {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content    {
+            border: none;
+        }
+    }
+    @media screen and (max-width: 768px) {
