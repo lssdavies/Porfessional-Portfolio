@@ -4,11 +4,11 @@ This repository contains my profeessional portfolio and catalogs my work as a we
 
 ## Web App 
 
-This web application should be viewable on all browsers and no additional software installing is needed.
+This web application should be viewable on all browsers and no additional software instalation is needed.
 
 The Web Application was developed using the following web technologies:
-1. HTML
-2. CSS
+1. HTML 5
+2. CSS 3
 
 The code meets accessibility standards and the site is optimized for search engines.
 
