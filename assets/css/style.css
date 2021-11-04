@@ -218,9 +218,11 @@ header nav ul li a  {
 }
 /*Contact info styling*/
 .contactInfo h5 {
+    display: flex;
     width: 100%;
     font-size: 18px;
     color: var(--primaryColor);
+    padding: 0px 10px;
 }
 /*Footer styling*/
 footer  {
@@ -251,6 +253,7 @@ footer h6   {
          display: none;
      }
     }
+    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
     @media screen and (max-width: 980px) {
         header  {
             display: flex;
@@ -287,4 +290,57 @@ footer h6   {
             border: none;
         }
     }
-    @media screen and (max-width: 768px) {
+    /* MEDIA QUERY FOR TABLETS AND SMALLER */
+    @media screen and (max-width: 768px)    {
+        .hero  {
+            justify-content: center;
+            background-image: url("../assets/images/headerBg4.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 290px;
+            border: 2px solid var(--tertiaryColor);
+         }
+         .heroQuote {
+             display: none;
+         }
+        .mainImage img  {
+            height: 200px;
+            width: 345px;
+            object-fit: cover;
+            border: 2px solid var(--tertiaryColor);
+            padding: 1px;
+            box-shadow: 4px 5px var(--tertiaryColor);
+        }
+        .imageText  {
+            position: relative;
+            bottom: 63px;
+            left: 4px;
+            text-align: center;
+        }
+        .grid   {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px)  {
+    .hero  {
+        justify-content: center;
+        background-image: url("../assets/images/headerBg5.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 290px;
+        border: 2px solid var(--tertiaryColor);
+     }
+     .heroQuote {
+         display: none;
+     }
+    .contactInfo   {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+  }
