@@ -28,10 +28,10 @@ header  {
     justify-content: space-between;
     background-color: var(--secondaryColor);
     padding: 10px 10px;
-    /*position: -webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 9999; */
+    z-index: 9999;
 }
 
 header h1   {
@@ -75,7 +75,7 @@ header nav ul li a  {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: right;
-    background-image: url("../assets/images/heroBg.png");
+    background-image: url("../images/heroBg.png");
     background-position: cover;
     background-repeat: no-repeat;
     height: 350px;
@@ -243,7 +243,7 @@ footer h6   {
 @media screen and (max-width: 1079px) {
     .hero  {
         justify-content: center;
-        background-image: url("../assets/images/headerBg2.png");
+        background-image: url("../images/headerBg2.png");
         background-position: center;
         background-repeat: no-repeat;
         height: 290px;
@@ -294,7 +294,7 @@ footer h6   {
     @media screen and (max-width: 768px)    {
         .hero  {
             justify-content: center;
-            background-image: url("../assets/images/headerBg4.png");
+            background-image: url("../images/headerBg4.png");
             background-position: center;
             background-repeat: no-repeat;
             height: 290px;
@@ -328,7 +328,7 @@ footer h6   {
   @media screen and (max-width: 575px)  {
     .hero  {
         justify-content: center;
-        background-image: url("../assets/images/headerBg5.png");
+        background-image: url("../images/headerBg5.png");
         background-position: center;
         background-repeat: no-repeat;
         height: 290px;
