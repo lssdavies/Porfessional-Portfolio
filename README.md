@@ -17,4 +17,4 @@ The code meets accessibility standards and the site is optimized for search engi
 Web App link: https://lssdavies.github.io/Professional-Portfolio/
 
 Screen shot of Web App:
-![Web App](../Professional-Portfolio/assets/images/deployedPorfolio.PNG)
+![Web App](/assets/images/deployedPorfolio.PNG)
