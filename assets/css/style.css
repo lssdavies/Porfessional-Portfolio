@@ -155,7 +155,7 @@ header nav ul li a  {
     object-fit: cover;
     border: 2px solid var(--tertiaryColor);
     padding: 1px;
-    box-shadow: 4px 5px var(--tertiaryColor);
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
 }
 .mainImage img:hover  {
     background-color: var(--primaryColor);
@@ -164,11 +164,11 @@ header nav ul li a  {
 .secondaryImage img  {
     height: 200px;
     width: 345px;
-    object-fit: contain;
+    object-fit: cover;
     border: 2px solid var(--tertiaryColor);
     padding: 1px;
     margin: 0 5px;
-    box-shadow: 4px 5px var(--tertiaryColor);
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
 }
 .secondaryImage img:hover  {
     background-color: var(--primaryColor);
